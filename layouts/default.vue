@@ -5,7 +5,8 @@
       <v-spacer></v-spacer>
       <v-toolbar-side-icon class="hidden-md-and-up"></v-toolbar-side-icon>
       <v-toolbar-items class="hidden-sm-and-down">
-          <v-btn to="/ticket" flat>Ticket</v-btn>
+          <v-btn to="/" flat>Ticket</v-btn>
+          <v-btn to="/crawler" flat>Crawler</v-btn>
       </v-toolbar-items>
     </v-toolbar>
     <v-container fluid>

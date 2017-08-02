@@ -5,10 +5,10 @@
                 <v-switch label="Home" v-model="switch_home"></v-switch>
             </v-flex>
             <v-flex md5>
-                <v-text-field name="home_url" label="Url" id="testing"></v-text-field>
+                <v-text-field name="home_url" label="Url" id="testing" :disabled="!switch_home"></v-text-field>
             </v-flex>
             <v-flex md5>
-                <v-text-field name="home_identifiant" label="Identifiant" id="testing"></v-text-field>
+                <v-text-field name="home_identifiant" label="Identifiant" :disabled="!switch_home" id="testing"></v-text-field>
             </v-flex>
         </v-layout>
         <v-layout row wrap>
@@ -16,10 +16,10 @@
                 <v-switch label="Category" v-model="switch_category"></v-switch>
             </v-flex>
             <v-flex md5>
-                <v-text-field name="category_url" label="Url" id="testing"></v-text-field>
+                <v-text-field name="category_url" label="Url" :disabled="!switch_category" id="testing"></v-text-field>
             </v-flex>
             <v-flex md5>
-                <v-text-field name="category_identifiant" label="Identifiant" id="testing"></v-text-field>
+                <v-text-field name="category_identifiant" label="Identifiant" :disabled="!switch_category" id="testing"></v-text-field>
             </v-flex>
         </v-layout>
         <v-layout row wrap>
@@ -27,10 +27,10 @@
                 <v-switch label="Listing" v-model="switch_listing"></v-switch>
             </v-flex>
             <v-flex md5>
-                <v-text-field name="listing_url" label="Url" id="testing"></v-text-field>
+                <v-text-field name="listing_url" label="Url" :disabled="!switch_listing" id="testing"></v-text-field>
             </v-flex>
             <v-flex md5>
-                <v-text-field name="listing_identifiant" label="Identifiant" id="testing"></v-text-field>
+                <v-text-field name="listing_identifiant" label="Identifiant" :disabled="!switch_listing" id="testing"></v-text-field>
             </v-flex>
         </v-layout>
         <v-layout row wrap>
@@ -38,10 +38,10 @@
                 <v-switch label="Offer" v-model="switch_offer"></v-switch>
             </v-flex>
             <v-flex md5>
-                <v-text-field name="offer_url" label="Url" id="testing"></v-text-field>
+                <v-text-field name="offer_url" label="Url" :disabled="!switch_offer" id="testing"></v-text-field>
             </v-flex>
             <v-flex md5>
-                <v-text-field name="offer_identifiant" label="Identifiant" id="testing"></v-text-field>
+                <v-text-field name="offer_identifiant" label="Identifiant" :disabled="!switch_offer" id="testing"></v-text-field>
             </v-flex>
         </v-layout>
     </v-container>
